@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PokemonView />
+    <TeamData/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokemonView from './components/PokemonView.vue'
+import TeamData from './components/TeamData.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokemonView,
+    TeamData
   }
+  
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+html {
+  background-color: black;
+  border: 20px double grey;
+  height: 95.8%;
 }
 </style>
