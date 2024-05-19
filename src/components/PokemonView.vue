@@ -19,6 +19,20 @@ export default {
                 image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/144.gif"
             }
         }
+    }, 
+    created() {
+        setTimeout(() => {
+            this.pokemon.pokedex = 97
+            this.pokemon.name = 'Growlithe'
+            this.pokemon.image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/58.gif';
+        }, 2000)
+    },
+    updated() {
+        setTimeout(() => {
+            this.pokemon.pokedex = 151,
+            this.pokemon.name = 'Mew',
+            this.pokemon.image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/151.gif';
+        }, 1000)
     }
 }
 </script>
@@ -35,6 +49,7 @@ p, h5 {
 
 img {
     margin-bottom: 2.5em;
+    height: 200px;
 }
 
 #description-pokemon {

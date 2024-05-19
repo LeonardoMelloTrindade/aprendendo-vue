@@ -1,12 +1,12 @@
 <template>
-    <section id="box-team">
+    <article id="box-team">
         <h3>{{ team.name }}</h3>
         <img :src="team.badge" alt="Real Madrid's badge"/>
         <section id="box-titles">
             <h2>Quantidade de títulos:</h2>
             <p id="quantity-titles">{{ team.quantityTitles }}</p>
         </section>
-    </section>
+    </article>
 </template>
 
 <script>
