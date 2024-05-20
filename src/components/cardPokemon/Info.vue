@@ -19,7 +19,7 @@ export default {
     },
     props: {
         name: String,
-        pokedex: Number,
+        pokedex: String,
         
     }
 }
@@ -47,7 +47,7 @@ img {
 }
 
 #box-pokemon {
-    border: 5px groove pink;
+    border: 5px groove rgb(236, 147, 162);
     width: 15%;
     text-align: center;
     height: 400px;
