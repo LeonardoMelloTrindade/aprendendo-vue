@@ -4,6 +4,7 @@
         <figcaption id="description-pokemon">
             <h5>Pokedex: <span>{{ pokedex }}</span></h5>
             <p>Name: <span>{{  name  }}</span></p>
+            <a :href="aboutPokemon" target="_blank">Clique aqui para mais informações sobre {{ name }}</a>
         </figcaption>
   </figure>
 </template>
@@ -21,6 +22,11 @@ export default {
         name: String,
         pokedex: String,
         
+    },
+    data() {
+        return {
+            aboutPokemon: `https://www.pokemon.com/br/pokedex/${this.pokedex}`
+        }
     }
 }
 </script>
@@ -48,6 +54,7 @@ img {
 
 #box-pokemon {
     border: 5px groove rgb(236, 147, 162);
+    min-width: 200px;
     width: 15%;
     text-align: center;
     height: 400px;

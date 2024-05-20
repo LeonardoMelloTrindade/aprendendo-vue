@@ -6,7 +6,7 @@
     :name="pokemon.namePokemon" 
     :pokedex="pokemon.pokedexId" 
     :key="pokemon.id" 
-    v-show="pokemon.namePokemon == 'Pikachu'"
+    v-show="pokemon.namePokemon !== 'Pikachu'"
     />
     
    </section>
@@ -49,7 +49,8 @@ export default {
           namePokemon: 'Pikachu',
           pokedexId: '25'
         }
-    ]
+    ],
+
     }
   }
   
