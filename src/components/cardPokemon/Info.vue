@@ -1,12 +1,12 @@
 <template>
     <figure id="box-pokemon">
+        <h5>Pokedex: <span class="content-pokemon">{{ pokedex }}</span></h5>
         <ImageInfo :pokedexForUrl="pokedex" :description="name"/>
         <figcaption id="description-pokemon">
-            <h5>Pokedex: <span>{{ pokedex }}</span></h5>
-            <p>Name: <span>{{  name  }}</span></p>
-            <a :href="aboutPokemon" target="_blank">Clique aqui para mais informações sobre {{ name }}</a>
+            <p>Name: <span class="content-pokemon">{{  name  }}</span></p>
+            <a :href="aboutPokemon" class="name-pokemon-link" target="_blank">Clique aqui para mais informações sobre <span class="content-pokemon">{{ name }}</span></a>
         </figcaption>
-  </figure>
+    </figure>
 </template>
 
 <script>
@@ -33,17 +33,22 @@ export default {
 
 <style>
 
-span {
-    font-style: italic;
+.name-pokemon-link {
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+}
+
+.name-pokemon-link:hover {
+    transition: .6s;
+    text-decoration: underline;
+    color: brown;
+}
+
+.content-pokemon {
+    color: var(--font-white);
+    font-family: var(--font-card);
     font-weight: bold;
-}
-
-p, h5 {
-    color: antiquewhite;
-}
-
-img {
-    margin-bottom: 2.5em;
 }
 
 #description-pokemon {
@@ -53,13 +58,13 @@ img {
 }
 
 #box-pokemon {
-    border: 5px groove rgb(236, 147, 162);
-    min-width: 200px;
-    width: 15%;
+    border: 5px double rgb(236, 147, 162);
+    min-width: 250px;
+    width: 20%;
     text-align: center;
+    font-family: var(--font-card);
     height: 400px;
     margin: 0 10px;
     background-image: url('https://e1.pxfuel.com/desktop-wallpaper/258/592/desktop-wallpaper-pokemon-go-type-backgrounds-pokemon-background.jpg');
 }
-
 </style>

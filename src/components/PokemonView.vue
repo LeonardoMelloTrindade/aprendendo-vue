@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 span {
     font-style: italic;
     font-weight: bold;
