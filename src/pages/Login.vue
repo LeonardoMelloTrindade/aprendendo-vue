@@ -1,5 +1,12 @@
 <template>
-  <main></main>
+  <main>
+    <section>
+       login
+    </section>
+    <section>
+      imagem
+    </section>
+  </main>
 </template>
 
 <script>
@@ -8,6 +15,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+section {
+  width: 50%;
+}
 
 </style>

@@ -39,6 +39,10 @@ export default {
 
 <style scoped>
 
-
+button {
+    background-color: rgb(236, 147, 162);
+    width: 130px;
+    height: 40px;
+}
 
 </style>
