@@ -38,6 +38,11 @@ export default {
 </script>
 
 <style scoped>
+button {
+    background-color: rgb(236, 147, 162);
+    width: 130px;
+    height: 40px;
+}
 
 
 

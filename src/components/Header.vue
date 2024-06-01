@@ -4,7 +4,13 @@
       <h1>Pokemons</h1>
     </article>
     <nav>
-      <a v-for="(generation, index) in generationsPokemons" :key="index">{{ generation }}ª Geração</a>
+      <router-link 
+        v-for="(generation, index) in generationsPokemons" 
+        :key="index" 
+        :to="{ path: '/generations', query: { genPokemon: generation } }"
+      >
+        {{ generation }}
+      </router-link>
     </nav>
   </header>
 </template>
@@ -14,7 +20,7 @@ export default {
     name: 'HeaderTitle',
     data() {
       return {
-        generationsPokemons: ['1', '2', '3', '4' ]
+        generationsPokemons: ['1ª Geração', '2ª Geração', '3ª Geração', '4ª Geração']
       }
     }
 }
@@ -47,6 +53,7 @@ export default {
     border-radius: 5px;
     transition: .6s;
     border: 1px solid var(--color-main);
+    text-decoration: none;
   }
 
   a:hover {

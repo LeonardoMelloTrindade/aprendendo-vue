@@ -25,17 +25,17 @@
     v-show="pokemon.namePokemon !== 'Pikachu'"
     />
    </section>
-   <section id="warning-pokemon" v-show="changevisiblityPokemons.hide">
-      <h1>Pokemons indisponíveis</h1>
+   <section v-show="changevisiblityPokemons.hide">
+      <h1 id="pokemons-off">Pokemons indisponíveis</h1>
    </section>
    
-   <section v-show="pokemons.length > 0" id="pokemons-off">
+   <section v-show="pokemons.length > 0" id="box-btn-visibility">
     <VisibilityPokemon 
     @handlerVisibility="variableChangedVisibility"
     />
    </section>
+   <router-view></router-view>
   </main>
-   
 </template>
 
 <script>
@@ -122,7 +122,14 @@ h1 {
 }
 
 #pokemons-off {
-  font-family: var(--font-card);
+  font-family: var(--font-header);
+}
+
+#box-btn-visibility {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 </style>
