@@ -1,13 +1,14 @@
 <template>
   <header>
     <article>
-      <h1>Pokemons</h1>
+      <router-link id="title" to="/">Pokemons</router-link>
     </article>
     <nav>
       <router-link 
         v-for="(generation, index) in generationsPokemons" 
         :key="index" 
-        :to="{ path: '/generations', query: { genPokemon: generation } }"
+        :to="{ path: '/generation', query: { genPokemon: generation } }"
+        class="nav-generation"
       >
         {{ generation }}
       </router-link>
@@ -35,16 +36,17 @@ export default {
     font-family: var(--font-header);
   }
 
-  h1 {
+  #title {
     font-size: 2.5em;
+    text-decoration: none;
   }
   
-  a, article {
+  .nav-generation, #title {
     color: var(--font-white);
     
   }
 
-  a {
+  .nav-generation {
     cursor: pointer;
     font-size: 1.1em;
     margin: 0 2px;
@@ -56,7 +58,7 @@ export default {
     text-decoration: none;
   }
 
-  a:hover {
+  .nav-generation:hover {
     color: rgb(48, 48, 196);
     border: 1px solid rgb(48, 48, 196)
   }
@@ -65,5 +67,10 @@ export default {
     width: 600px;
     display: flex;
     justify-content: space-around;
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
   }
 </style>

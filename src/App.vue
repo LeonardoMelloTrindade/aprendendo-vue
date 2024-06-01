@@ -34,7 +34,7 @@
     @handlerVisibility="variableChangedVisibility"
     />
    </section>
-   <router-view></router-view>
+   <router-view></router-view> <!--VER PORQUE ESTA DUPLICANOD O APP QUANDO ELE FICA AQUI-->
   </main>
 </template>
 
