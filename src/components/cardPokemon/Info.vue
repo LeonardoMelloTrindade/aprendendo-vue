@@ -6,27 +6,36 @@
             <p>Name: <span class="content-pokemon">{{  name  }}</span></p>
             <a :href="aboutPokemon" class="name-pokemon-link" target="_blank">Clique aqui para mais informações sobre <span class="content-pokemon">{{ name }}</span></a>
         </figcaption>
+        <section>
+            <BadgeType :type="type"/>
+        </section>
     </figure>
 </template>
 
 <script>
+import BadgeType from './BadgeType.vue';
 import ImageInfo from './ImageInfo.vue'
 
 
 export default {
     name: 'MyInfoInterest',
     components: {
-        ImageInfo
+        ImageInfo,
+        BadgeType
     },
     props: {
         name: String,
         pokedex: String,
+        type: Array
         
     },
     data() {
         return {
             aboutPokemon: `https://www.pokemon.com/br/pokedex/${this.pokedex}`
         }
+    },
+    mounted() {
+        console.log(this.type)
     }
 }
 </script>

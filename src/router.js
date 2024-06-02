@@ -1,7 +1,6 @@
 // src/router.js
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from './App.vue'
 import GenerationScreen from './pages/GenerationScreen.vue'
 
 Vue.use(Router)
@@ -11,8 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'App',
-      component: App
+      name: 'App'
     },
     {
       path: '/generation',
