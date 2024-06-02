@@ -1,7 +1,7 @@
 <template>
   <header>
     <article>
-      <router-link id="title" to="/">Pokemons</router-link>
+      <router-link id="title" to="#">Pokemons</router-link>
     </article>
     <nav>
       <router-link 
