@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <HeaderTitle/>
     <main>
       
       <h1>{{ generation }}</h1>
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
+import HeaderTitle from '@/components/Header.vue';
 
   export default {
       name: 'GenerationScreen',
       components: {
-        Header
+        HeaderTitle
       },
       computed: {
         generation() {

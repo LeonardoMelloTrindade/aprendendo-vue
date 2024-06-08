@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import GenerationScreen from './pages/GenerationScreen.vue'
+import HomePokemon from './pages/Home.vue'
 
 Vue.use(Router)
 
@@ -10,7 +11,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'App'
+      name: 'HomePokemon',
+      component: HomePokemon
+
     },
     {
       path: '/generation',

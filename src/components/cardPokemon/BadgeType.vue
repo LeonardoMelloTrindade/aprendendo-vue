@@ -7,7 +7,6 @@
             {{ type[1] }}
         </section>
     </div>
-  
 </template>
 
 <script>
@@ -23,20 +22,17 @@ export default {
 
     div {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 10% 0 0 0;
     }
 
     section {
-        width: 120px;
+        width: 100px;
         height: 30px;
-        border: 1px solid black;
         border-radius: 10px;
         line-height: 30px;
         font-family: var(--font-card);
         cursor: default;
+        margin: 0 6px 6px 0;
+        border: 1px solid gray;
     }
     section:hover {
         transition: 0.3s;
