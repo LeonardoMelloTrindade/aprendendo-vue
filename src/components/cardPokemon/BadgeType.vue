@@ -25,7 +25,8 @@ export default {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 30px 0;
+        align-items: center;
+        margin: 10% 0 0 0;
     }
 
     section {

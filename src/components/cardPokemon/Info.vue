@@ -50,13 +50,14 @@ export default {
 
 .name-pokemon-link:hover {
     transition: .6s;
-    color: rgb(84, 84, 233);
+    color: rgb(84, 84, 233) !important;
 }
 
 .content-pokemon {
     color: var(--font-white);
     font-family: var(--font-card);
     font-weight: bold;
+    display: block
 }
 
 #description-pokemon {
