@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="container-all-pokemon">
       <HeaderTitle/>
       <section v-show="pokemons.length > 0" id="box-btn-visibility">
        <VisibilityPokemon 
@@ -57,7 +57,21 @@
             pokedexId: '1',
             type: ['Grass']
           }, 
-         
+          {
+            namePokemon: "Pikachu",
+            pokedexId: '25',
+            type: ['Electric']
+          },
+          {
+            namePokemon: 'Cinderace',
+            pokedexId: '815',
+            type: ['Fire'],
+          },
+          {
+            namePokemon: 'Lucario',
+            pokedexId: '448',
+            type: ['Fighting']
+          }
         ], 
         changevisiblityPokemons: {
           hide: Boolean,
@@ -83,13 +97,6 @@
   </script>
   
   <style>
-html {
-    background-color: var(--color-main);
-    border: 20px double grey;
-    height: 95.8%;
-
-  }
-  
   h1 {
     text-align: center;
     color: aliceblue;
@@ -116,5 +123,8 @@ html {
     cursor: pointer;
   }
   
+  #container-all-pokemon {
+    border: 20px double grey;
+  }
   
   </style>

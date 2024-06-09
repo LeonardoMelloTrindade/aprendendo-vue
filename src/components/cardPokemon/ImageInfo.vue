@@ -11,7 +11,7 @@ export default {
     },
     data() {
         return {
-            url: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${this.pokedexForUrl}.gif`
+            url: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${this.pokedexForUrl}.png`
         }
     },
     
@@ -21,9 +21,9 @@ export default {
 <style scoped>
 
 img {
-    margin-top: 30px;
-    height: 100px;
-    width: 100px;
+    margin-top: 10px;
+    height: 120px;
+    width: 120px;
 }
 
 </style>

@@ -4,12 +4,13 @@
   --font-white: aliceblue;
   --font-header: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --Water: blue;
-  --Fire: red;
+  --Fire: rgb(221, 81, 0);
   --Grass: green;
   --Ice: rgb(103, 188, 238);
   --Electric: yellow;
   --Psychic: purple;
   --Mistic: rgb(161, 61, 148);
   --Flying: rgb(197, 228, 238);
+  --Fighting: red;
   
   }
