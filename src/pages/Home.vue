@@ -71,6 +71,11 @@
             namePokemon: 'Lucario',
             pokedexId: '448',
             type: ['Fighting']
+          },
+          {
+            namePokemon: 'Mewtwo',
+            pokedexId: '150',
+            type: ['Psychic']
           }
         ], 
         changevisiblityPokemons: {

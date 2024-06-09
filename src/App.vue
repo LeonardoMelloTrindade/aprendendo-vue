@@ -13,6 +13,7 @@ export default {
 <style>
 body {
   background-color: var(--color-main);
+  height: 100vh;
 }
 
 </style>
